@@ -8,9 +8,34 @@ import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 
 public class HttpClient {
-    public static void HttpGet() {
-        String url = "https://api.github.com/users";
+    public static String apiUrl = "https://covidapi.info/api/v1/";
 
+    public static void specificDataForCountry(String country, String date) {
+        String url = date == "" ? apiUrl + "country/" + country : apiUrl + "country/" + country + "/" + date;
+        System.out.println(url);
+        HttpGet(url);
+    }
+
+    public static void golbalStats(String date1, String date2) {
+        String url;
+        if (date1 == "") {
+            url = apiUrl + "global";
+        } else if (date2 == "") {
+            url = apiUrl + "global/" + date1;
+        } else {
+            url = apiUrl + "global/" + date1 + "/" + date2;
+        }
+        System.out.println(url);
+        HttpGet(url);
+    }
+
+    public static void timeSeriesGolbalStats(String country, String date1, String date2) {
+        String url = country == "" ? apiUrl + "global/timeseries/" + date1 + "/" + date2 : apiUrl + "country/" + country + "/timeseries/" + date1 + "/" + date2;
+        System.out.println(url);
+        HttpGet(url);
+    }
+
+    public static void HttpGet(String url) {
         CloseableHttpClient client = HttpClients.createDefault();
         HttpGet get = new HttpGet(url);
         CloseableHttpResponse resp = null;

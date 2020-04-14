@@ -37,7 +37,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/marven" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
@@ -74,10 +74,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="0" key="#OOD_Project_[dependencies]/0.0.1366.728@0.0.1366.728" timestamp="1585544535460" />
-    <state x="163" y="0" key="#Project_Structure" timestamp="1585541356416">
+    <state x="163" y="0" key="#Project_Structure" timestamp="1586817644475">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1585541356416" />
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1586817644475" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586824108454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586824108454" />
     <state x="434" y="119" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1585543976952">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -86,22 +90,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="410" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585549118816" />
-    <state width="1367" height="62" key="GridCell.Tab.0.bottom" timestamp="1585550907949">
+    <state width="1323" height="263" key="GridCell.Tab.0.bottom" timestamp="1586828216658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="62" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585550907949" />
-    <state width="1367" height="62" key="GridCell.Tab.0.center" timestamp="1585550907949">
+    <state width="1323" height="263" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
+    <state width="1323" height="263" key="GridCell.Tab.0.center" timestamp="1586828216658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="62" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585550907949" />
-    <state width="1367" height="62" key="GridCell.Tab.0.left" timestamp="1585550907949">
+    <state width="1323" height="263" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
+    <state width="1323" height="263" key="GridCell.Tab.0.left" timestamp="1586828216658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="62" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585550907949" />
-    <state width="1367" height="62" key="GridCell.Tab.0.right" timestamp="1585550907949">
+    <state width="1323" height="263" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
+    <state width="1323" height="263" key="GridCell.Tab.0.right" timestamp="1586828216658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="62" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585550907949" />
+    <state width="1323" height="263" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585547644012">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -110,10 +114,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585544807202" />
-    <state x="408" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585544795553">
+    <state x="408" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586825246095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="408" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1585544795553" />
+    <state x="408" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1586825246095" />
     <state x="65" y="0" key="new project wizard" timestamp="1585544874828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
