@@ -22,7 +22,7 @@ public class Main {
             // This print statement will be displayed for the user
             System.out.println("Please enter date in the format year-month-day ----> 2020-02-28");
             CovidStats cs = new CovidStats(myMap);
-            cs.getStatsForDate("2020-01-22");
+            cs.getStatsForDate("2020-02-12");
 
         } catch (ParseException e) {
             System.out.println("Not a valid country name");
