@@ -55,6 +55,7 @@ public class CountryStats {
             while (iter.hasNext()) {
                 Map.Entry mapElement = (Map.Entry) iter.next();
                 covidStatsByDateMap.put(mapElement.getKey().toString(), (JSONObject) mapElement.getValue());
+
             }
 
             return covidStatsByDateMap;
@@ -66,6 +67,5 @@ public class CountryStats {
 
         return null;
     }
-
 
 }

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "count": 88,
   "result": {
@@ -443,3 +444,6 @@
     }
   }
 }
+=======
+{"count":1,"result":{"2020-04-10":{"confirmed":158273,"deaths":16081,"recovered":55668}}}
+>>>>>>> Stashed changes
