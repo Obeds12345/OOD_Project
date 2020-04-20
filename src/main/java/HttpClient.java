@@ -56,8 +56,31 @@ public class HttpClient {
         } else {
             url = apiUrl + "global/" + date1 + "/" + date2;
         }
-        System.out.println(url);
-        HttpGet(url);
+        Path output = Paths.get("output");
+
+        String json = NewHttpGet(url);
+
+        if(!Files.exists(output.toAbsolutePath())) {
+            try {
+                Files.createDirectories(output.toAbsolutePath());
+                output = output.resolve("worldStats.json");
+                BufferedWriter writer = Files.newBufferedWriter(output);
+                writer.write(json);
+                writer.close();
+            } catch (IOException e) {
+                System.out.println("Not there");
+            }
+        } else {
+            try {
+                output = output.resolve("worldStats.json");
+                BufferedWriter writer = Files.newBufferedWriter(output);
+                writer.write(json);
+                writer.close();
+            } catch (IOException e) {
+                System.out.println("Not happening");
+            }
+        }
+
     }
 
     public static void timeSeriesGolbalStats(String country, String date1, String date2) {

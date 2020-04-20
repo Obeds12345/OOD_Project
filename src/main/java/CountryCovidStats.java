@@ -8,14 +8,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class RecoveredAndDeathRates {
+public class CountryCovidStats {
     private String countryName;
     private String currentDate;
     private Long confirmed;
     private Long deaths;
     private Long recovered;
 
-    public RecoveredAndDeathRates(String countryName, String currentDate) throws ParseException {
+    public CountryCovidStats(String countryName, String currentDate) throws ParseException {
         this.countryName = countryName;
         this.currentDate = currentDate;
         HttpClient.specificDataForCountry(countryName, currentDate);

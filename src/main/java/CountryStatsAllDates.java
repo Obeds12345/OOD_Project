@@ -10,12 +10,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class CountryStats {
+public class CountryStatsAllDates {
     private String countryName;
     private Long numberOfEntries;
     private Map<String, JSONObject> covidStatsByDateMap;
 
-    public CountryStats(String countryName) throws ParseException {
+    public CountryStatsAllDates(String countryName) throws ParseException {
         this.countryName = countryName;
         HttpClient.specificDataForCountry(countryName,"");
         this.covidStatsByDateMap = this.createMap();
