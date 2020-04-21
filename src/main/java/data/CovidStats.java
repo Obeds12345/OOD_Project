@@ -1,4 +1,4 @@
-// A class to handle the data for our map effectively
+package data;// A class to handle the data for our map effectively
 
 import org.json.simple.JSONObject;
 

@@ -1,3 +1,5 @@
+package data;
+
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
@@ -8,9 +10,9 @@ import java.util.Calendar;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        //HttpClient.specificDataForCountry("USA","2020-04-17"); // 2020-03-15
-        //HttpClient.golbalStats("",""); // 2020-02-15, 2020-04-01
-        //HttpClient.timeSeriesGolbalStats("GB","2020-02-15","2020-04-01"); // USA, 2020-02-15, 2020-04-01
+        //data.HttpClient.specificDataForCountry("USA","2020-04-17"); // 2020-03-15
+        //data.HttpClient.golbalStats("",""); // 2020-02-15, 2020-04-01
+        //data.HttpClient.timeSeriesGolbalStats("GB","2020-02-15","2020-04-01"); // USA, 2020-02-15, 2020-04-01
 
         try {
             // World stats for the top section of the application
@@ -79,7 +81,6 @@ public class Main {
         } catch (ParseException e) {
             System.out.println("Json file cannot be parsed. Check date used");
         }
-
     }
 
     // For display purposes. DISCARD FOR FINAL CODE

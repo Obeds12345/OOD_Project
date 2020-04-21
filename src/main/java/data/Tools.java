@@ -1,27 +1,28 @@
+package data;
+
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class CountryName {
-    private String filename;
-    private Path path;
-    private Map<String, String> countryMap;
+public class Tools {
 
-    public CountryName(String filename) throws IOException {
-        this.filename = filename;
-        this.path = Path.of(ClassLoader.getSystemResource(filename).getFile());
-        this.countryMap = createMap();
+    public static Path getPath(String filename) {
+        Path path = null;
+        try {
+            path = Paths.get(ClassLoader.getSystemResource(filename).toURI());
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        return path;
     }
 
-    public Map<String, String> getCountryMap() {
-        return countryMap;
-    }
-
-    private Map<String, String> createMap() throws IOException {
-        Stream<String> fileStream = Files.lines(path);
+    public static Map<String, String> createMap() throws IOException {
+        Stream<String> fileStream = Files.lines(getPath("ISO.txt"));
 
         // Get each line in text file and add it to a list
         List<String[]> list = fileStream.map(line -> line.split("\n"))
@@ -36,7 +37,7 @@ public class CountryName {
         // Stream through newly created list and split it at "====="
         List<String[]> testList = countryNames.stream()
                 .map(row -> row
-                .split("====="))
+                        .split("====="))
                 .collect(Collectors.toList());
 
 
@@ -44,22 +45,12 @@ public class CountryName {
         // three letter abbreviation of country
         // Ex. Australia -> AUS
         Map<String, String> countryMap = new HashMap<>();
-        for(String[] row : testList) {
+        for (String[] row : testList) {
             countryMap.put(row[0], row[2]);
         }
 
         fileStream.close();
-
         return countryMap;
-    }
-
-    public void displayCountryNameAndAbbreviation() {
-        this.countryMap.entrySet()
-                .stream()
-                .sorted(Map.Entry.comparingByKey())
-                .forEach(elem -> {
-                    System.out.println(elem.getKey() + " : " + elem.getValue());
-                });
     }
 
 }

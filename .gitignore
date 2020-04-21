@@ -4,6 +4,9 @@
 /.gradle
 /.idea
 /build
+.gradle
+build
+.idea
 
 # System files
 .DS_Store
