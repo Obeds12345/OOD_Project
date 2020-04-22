@@ -41,6 +41,11 @@ public class GetMultiBarChart {
         VBox vbox = new VBox(bc);
         vbox.setPrefWidth(700);
         vbox.setPrefHeight(400);
+        vbox.setStyle("-fx-border-style: solid inside;" +
+                "-fx-border-width: 0 0 1 0;" +
+                "-fx-border-insets: 5;" +
+                "-fx-border-radius: 0;" +
+                "-fx-border-color: grey;");
         return vbox;
 
         // If our code doesn't parse correctly we will fill in with manual values

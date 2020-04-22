@@ -41,7 +41,7 @@ public class Main extends Application {
 
             window = primaryStage;
             window.setTitle("Project");
-            Scene scene = new Scene(createBorderPane(myCountries, date), 1800, 1300);
+            Scene scene = new Scene(createBorderPane(myCountries, date), 1800, 700);
             window.setScene(scene);
             window.show();
         } catch (ParseException e) {
@@ -50,7 +50,7 @@ public class Main extends Application {
 
     }
 
-    public BorderPane createBorderPane(List<CountryCovidStats> countries, String date) throws IOException {
+    public BorderPane createBorderPane(List<CountryCovidStats> countries, String date) throws IOException, ParseException {
         BorderPane borderPane = new BorderPane();
         BorderPane centerPane = new BorderPane();
         BorderPane centerPane2 = new BorderPane();
@@ -87,8 +87,6 @@ public class Main extends Application {
                 } catch (ParseException error) {
                     System.out.println("Not a valid country or date");
                 }
-
-
                 System.out.println(comboBox.getValue() + " selected");
             }
         };

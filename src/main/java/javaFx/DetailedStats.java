@@ -1,33 +1,36 @@
 package javaFx;
 
+import data.WorldStats;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import org.json.simple.parser.ParseException;
+
+import java.text.DecimalFormat;
 
 public class DetailedStats {
-    public static HBox DetailedBox() {
+    public static HBox DetailedBox() throws ParseException {
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        decimalFormat.setGroupingUsed(true);
+        decimalFormat.setGroupingSize(3);
+
+        WorldStats ws = new WorldStats();
         HBox hbox = new HBox();
-        hbox.setSpacing(10);
+        hbox.setSpacing(20);
         hbox.setPadding(new Insets(5));
         hbox.setAlignment(Pos.CENTER_LEFT);
         hbox.setStyle("-fx-border-style: solid inside;" +
+                "-fx-align: right;" +
                 "-fx-border-width: 1;" +
                 "-fx-border-insets: 5;" +
                 "-fx-border-radius: 2;" +
                 "-fx-border-color: gray;");
-        Label space = new Label("             ");
-        Label space2 = new Label("             ");
-        Label cases = new Label("Total Cases: ");
-        Label casesValue = new Label("1,120,908");
+        Label cases = new Label("Total Cases:  " + decimalFormat.format(ws.getConfirmed()));
+        Label deaths = new Label("Total Deaths:  " + decimalFormat.format(ws.getDeaths()));
+        Label recovery = new Label("Total Recovery:  " + decimalFormat.format(ws.getRecovered()));
 
-        Label deaths = new Label("Total Deaths: ");
-        Label deathsValue = new Label("200,345");
-
-        Label recovery = new Label("Total Recovery: ");
-        Label recoveryValue = new Label("700,345");
-
-        hbox.getChildren().addAll(cases, casesValue, space, deaths, deathsValue, space2, recovery, recoveryValue);
+        hbox.getChildren().addAll(cases, deaths, recovery);
         return hbox;
     }
 }
