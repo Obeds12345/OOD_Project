@@ -1,27 +1,32 @@
 package javaFx;
 
+import data.CountryCovidStats;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.layout.VBox;
 
+import java.util.List;
+
 public class GetBarChart {
-    public static VBox bar() {
+    public static VBox bar(List<CountryCovidStats> countries) {
         CategoryAxis xAxis = new CategoryAxis();
-        xAxis.setLabel("Jan-2-2020");
+        xAxis.setLabel("Countries");
 
         NumberAxis yAxis = new NumberAxis();
-        yAxis.setLabel("Data");
+        yAxis.setLabel("Values");
 
         BarChart barChart = new BarChart(xAxis, yAxis);
+        barChart.setTitle("Deaths per Country");
 
         XYChart.Series dataSeries1 = new XYChart.Series();
-        dataSeries1.setName("USA");
+        dataSeries1.setName("Deaths");
 
-        dataSeries1.getData().add(new XYChart.Data("Cases", 167));
-        dataSeries1.getData().add(new XYChart.Data("Deaths", 65));
-        dataSeries1.getData().add(new XYChart.Data("Recovery", 23));
+        for (CountryCovidStats currentCountry : countries) {
+            dataSeries1.getData().add(new XYChart.Data(currentCountry.getCountryName(), currentCountry.getDeaths()));
+        }
+
 
         barChart.getData().add(dataSeries1);
 
@@ -31,8 +36,8 @@ public class GetBarChart {
                 "-fx-border-insets: 5;" +
                 "-fx-border-radius: 5;" +
                 "-fx-border-color: blue;");
-        vbox.setPrefWidth(400);
-        vbox.setPrefHeight(400);
+        vbox.setPrefWidth(1200);
+        vbox.setPrefHeight(800);
         return vbox;
     }
 

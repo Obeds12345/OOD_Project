@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e19bc3b-5982-4f8a-827d-4f42ed44d71c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/output/worldStats.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WorldStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CountryStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountryStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountryStatsAllDates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FxMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FxMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RecoveredAndDeathRates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountryCovidStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetBarChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetBarChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetLineChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetLineChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetMultiBarChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetMultiBarChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -74,7 +66,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="CountryCovidStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountryCovidStats" />
       <module name="OOD_Project.main" />
@@ -96,9 +88,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaFx.Main" />
       <module name="OOD_Project.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaFx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.WorldStats" />
         <item itemvalue="Application.FxMain" />
         <item itemvalue="Application.CountryCovidStats" />
         <item itemvalue="Application.CountryName" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -154,10 +152,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1586817644475" />
-    <state x="709" y="268" key="#com.intellij.ide.util.MemberChooser" timestamp="1587345503287">
+    <state x="709" y="268" key="#com.intellij.ide.util.MemberChooser" timestamp="1587514823587">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="709" y="268" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1587345503287" />
+    <state x="709" y="268" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1587514823587" />
     <state x="745" y="456" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587337848019">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -178,26 +176,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="410" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585549118816" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1587347781531">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1587517672316">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="263" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587347781531" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1587347781531">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1587517672316">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="263" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587347781531" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1587347781530">
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1587517672316">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="263" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587347781530" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1587347781531">
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1587517672316">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="263" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587347781531" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585547644012">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -222,6 +220,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1585544874828" />
+    <state x="658" y="173" key="refactoring.ChangeSignatureDialog" timestamp="1587506486501">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="658" y="173" key="refactoring.ChangeSignatureDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587506486501" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1587246506272">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

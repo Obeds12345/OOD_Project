@@ -1,23 +1,35 @@
 package javaFx;
 
+import data.CountryCovidStats;
+import data.IndividualStat;
 import javafx.scene.chart.PieChart;
 import javafx.scene.layout.VBox;
 
-public class GetPieChart {
-    public static VBox  pieChart() {
-        PieChart pieChart = new PieChart();
-        pieChart.setTitle("USA Month Summary");
-        PieChart.Data slice1 = new PieChart.Data("April", 213);
-        PieChart.Data slice2 = new PieChart.Data("May", 67);
-        PieChart.Data slice3 = new PieChart.Data("June", 36);
+import java.util.List;
 
-        pieChart.getData().add(slice1);
-        pieChart.getData().add(slice2);
-        pieChart.getData().add(slice3);
+public class GetPieChart {
+    public static VBox  pieChart(List<CountryCovidStats> countries, IndividualStat stat) {
+        PieChart pieChart = new PieChart();
+        pieChart.setTitle(stat.name());
+
+        for(CountryCovidStats country : countries) {
+            double tempValue = stat.getValue(country);
+            PieChart.Data slice1 = new PieChart.Data(country.getCountryName(), tempValue);
+            pieChart.getData().add(slice1);
+
+        }
+
+
+        pieChart.getData().forEach(data -> {
+            data.nameProperty().bind(
+                    javafx.beans.binding.Bindings.concat(data.getName(), " ", data.getPieValue())
+            );
+        });
+
 
         VBox vbox = new VBox(pieChart);
-        vbox.setPrefWidth(400);
-        vbox.setPrefHeight(400);
+        vbox.setPrefWidth(600);
+        vbox.setPrefHeight(600);
         return vbox;
     }
 }
