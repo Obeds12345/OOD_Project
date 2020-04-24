@@ -7,10 +7,12 @@ import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import org.json.simple.parser.ParseException;
 
@@ -39,10 +41,19 @@ public class Main extends Application {
             myCountries.add(new CountryCovidStats("CHN", date));
             myCountries.add(new CountryCovidStats("JPN", date));
 
+
+
             window = primaryStage;
             window.setTitle("Project");
-            Scene scene = new Scene(createBorderPane(myCountries, date), 1800, 700);
+            Scene scene = new Scene(createBorderPane(myCountries, date));
             window.setScene(scene);
+            Screen screen = Screen.getPrimary();
+            Rectangle2D bounds = screen.getVisualBounds();
+
+            window.setX(bounds.getMinX());
+            window.setY(bounds.getMinY());
+            window.setWidth(bounds.getWidth());
+            window.setHeight(bounds.getHeight());
             window.show();
         } catch (ParseException e) {
             System.out.println("Cannot parse json. Check date");
@@ -55,52 +66,58 @@ public class Main extends Application {
         BorderPane centerPane = new BorderPane();
         BorderPane centerPane2 = new BorderPane();
 
-        centerPane2.setLeft(GetPieChart.pieChart(countries, IndividualStat.DEATHS));
-        centerPane2.setCenter(GetPieChart.pieChart(countries, IndividualStat.CONFIRMED));
-        centerPane2.setRight(GetPieChart.pieChart(countries, IndividualStat.RECOVERED));
+        centerPane2.setLeft(GetPieLeft.pieChart(countries, IndividualStat.DEATHS));
+        centerPane2.setCenter(GetPieCenter.pieChart(countries, IndividualStat.CONFIRMED));
+        centerPane2.setRight(GetPieRight.pieChart(countries, IndividualStat.RECOVERED));
 
         centerPane.setTop(GetMultiBarChart.multiBar(countries, date));
         centerPane.setCenter(centerPane2);
 
         borderPane.setTop(DetailedStats.DetailedBox());
-        borderPane.setLeft(menuLeft(countries, date));
-        borderPane.setCenter(centerPane);
+        borderPane.setCenter(menuLeft(countries, date));
+        borderPane.setBottom(centerPane);
         return borderPane;
     }
 
-    public VBox menuLeft(List<CountryCovidStats> currentCountries, String date) throws IOException {
-        VBox vbox = new VBox();
+    public HBox menuLeft(List<CountryCovidStats> currentCountries, String date) throws IOException {
+        HBox hBox = new HBox();
         Map<String, String> countries = Tools.createMap();
         ComboBox comboBox = new ComboBox(FXCollections.observableArrayList(countries.keySet()));
         comboBox.setValue("United States of America (the)");
-
         // Create action event
         // This part needs work. Do you know how to update the app when you select a country.
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 String countryAbbr = countries.get(comboBox.getValue());
-                try{
+                try {
                     CountryCovidStats newCountry = new CountryCovidStats(countryAbbr, date);
-                    int lastIndex = currentCountries.size() - 1;
-                    currentCountries.set(lastIndex, newCountry);
 
+                    double tempValueDEATHS = IndividualStat.DEATHS.getValue(newCountry);
+                    double tempValueCONFIRMED = IndividualStat.CONFIRMED.getValue(newCountry);
+                    double tempValueRECOVERED = IndividualStat.RECOVERED.getValue(newCountry);
+
+                    GetPieLeft.addData(0, newCountry.getCountryName(), tempValueDEATHS);
+                    GetPieCenter.addData(0, newCountry.getCountryName(), tempValueCONFIRMED);
+                    GetPieRight.addData(0, newCountry.getCountryName(), tempValueRECOVERED);
+
+                    GetMultiBarChart.addData(0, newCountry.getConfirmed(), newCountry.getCountryName());
+                    GetMultiBarChart.addData2(0, newCountry.getDeaths(), newCountry.getCountryName());
+                    GetMultiBarChart.addData3(0, newCountry.getRecovered(), newCountry.getCountryName());
                 } catch (ParseException error) {
                     System.out.println("Not a valid country or date");
                 }
-                System.out.println(comboBox.getValue() + " selected");
             }
         };
 
         comboBox.setOnAction(event);
-//        String value = (String) comboBox.getValue();
-        vbox.getChildren().addAll(comboBox);
-        vbox.setStyle("-fx-border-style: solid inside;" +
+        hBox.getChildren().addAll(comboBox);
+        hBox.setStyle("-fx-border-style: solid inside;" +
                 "-fx-border-width: 2;" +
                 "-fx-border-insets: 5;" +
                 "-fx-border-radius: 5;" +
                 "-fx-border-color: blue;");
-        vbox.setPrefWidth(120);
-        return vbox;
+//        hBox.setPrefWidth(120);
+        return hBox;
     }
 
     public static void main(String[] args) {

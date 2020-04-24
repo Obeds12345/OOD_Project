@@ -1,4 +1,4 @@
-package javaFx;
+package NotInUsed;
 
 import data.CountryCovidStats;
 import data.IndividualStat;
