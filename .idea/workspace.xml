@@ -28,7 +28,23 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OOD_Project" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OOD_Project" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OOD_Project" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -66,16 +82,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Gradle.OOD_Project [run]">
     <configuration name="CountryCovidStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountryCovidStats" />
-      <module name="OOD_Project.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountryName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountryName" />
       <module name="OOD_Project.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,27 +117,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OOD_Project [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OOD_Project [run]" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.WorldStats" />
         <item itemvalue="Application.FxMain" />
         <item itemvalue="Application.CountryCovidStats" />
-        <item itemvalue="Application.CountryName" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -176,25 +192,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="410" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585549118816" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1587517672316">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1323" height="75" key="GridCell.Tab.0.bottom" timestamp="1587712116509">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
+    <state width="1323" height="75" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587712116509" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1587517672316">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1323" height="75" key="GridCell.Tab.0.center" timestamp="1587712116508">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
+    <state width="1323" height="75" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587712116508" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1587517672316">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1323" height="75" key="GridCell.Tab.0.left" timestamp="1587712116508">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
+    <state width="1323" height="75" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587712116508" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1587517672316">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1323" height="75" key="GridCell.Tab.0.right" timestamp="1587712116509">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="263" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586828216658" />
+    <state width="1323" height="75" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587712116509" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585547644012">
       <screen x="0" y="0" width="1366" height="728" />
