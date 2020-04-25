@@ -35,11 +35,12 @@ public class Main extends Application {
             cal.add(Calendar.DATE, -1); // gets yesterdays date
             String date = dateFormat.format(cal.getTime());
             List<CountryCovidStats> myCountries = new ArrayList<>();
-            myCountries.add(new CountryCovidStats("USA", date));
+
+            myCountries.add(new CountryCovidStats("JPN", date));
             myCountries.add(new CountryCovidStats("ITA", date));
             myCountries.add(new CountryCovidStats("ESP", date));
             myCountries.add(new CountryCovidStats("CHN", date));
-            myCountries.add(new CountryCovidStats("JPN", date));
+            myCountries.add(new CountryCovidStats("USA", date));
 
 
 
@@ -84,8 +85,7 @@ public class Main extends Application {
         Map<String, String> countries = Tools.createMap();
         ComboBox comboBox = new ComboBox(FXCollections.observableArrayList(countries.keySet()));
         comboBox.setValue("United States of America (the)");
-        // Create action event
-        // This part needs work. Do you know how to update the app when you select a country.
+
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 String countryAbbr = countries.get(comboBox.getValue());
@@ -99,6 +99,7 @@ public class Main extends Application {
                     GetPieLeft.addData(0, newCountry.getCountryName(), tempValueDEATHS);
                     GetPieCenter.addData(0, newCountry.getCountryName(), tempValueCONFIRMED);
                     GetPieRight.addData(0, newCountry.getCountryName(), tempValueRECOVERED);
+
 
                     GetMultiBarChart.addData(0, newCountry.getConfirmed(), newCountry.getCountryName());
                     GetMultiBarChart.addData2(0, newCountry.getDeaths(), newCountry.getCountryName());

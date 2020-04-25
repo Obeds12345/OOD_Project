@@ -12,6 +12,7 @@ import java.util.List;
 
 public class GetPieLeft {
     public static ObservableList<PieChart.Data> pieChartData;
+    public static PieChart pieChart = new PieChart();
 
     public static VBox pieChart(List<CountryCovidStats> countries, IndividualStat stat) {
         pieChartData = FXCollections.observableArrayList();
@@ -21,7 +22,7 @@ public class GetPieLeft {
             pieChartData.add(new javafx.scene.chart.PieChart.Data(country.getCountryName(), tempValue));
         }
 
-        PieChart pieChart = new PieChart(pieChartData);
+        pieChart.setData(pieChartData);
         pieChart.setTitle(stat.name());
 
         pieChart.getData().forEach(data -> {
@@ -45,6 +46,10 @@ public class GetPieLeft {
             }
         }
         pieChartData.set(position, new javafx.scene.chart.PieChart.Data(name, value));
+
+        pieChart.setData(pieChartData);
+
+        pieChart.getData().get(0).nameProperty().bind(javafx.beans.binding.Bindings.concat((name + " " + value)));
     }
 
 }

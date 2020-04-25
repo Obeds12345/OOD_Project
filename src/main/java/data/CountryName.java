@@ -14,7 +14,6 @@ public class CountryName {
 
     public CountryName(String filename) throws IOException {
         this.filename = filename;
-//        this.path = Path.of(ClassLoader.getSystemResource(filename).getFile());
         this.path =   Tools.getPath(filename);
         this.countryMap = createMap();
     }

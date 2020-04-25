@@ -4,10 +4,12 @@
     <list default="true" id="6e19bc3b-5982-4f8a-827d-4f42ed44d71c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetBarChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetBarChart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetLineChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetLineChart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetMultiBarChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetMultiBarChart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/CountryName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/CountryName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/CountryStatsAllDates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/CovidStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieRight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,9 +56,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +84,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunManager" selected="Gradle.OOD_Project [run]">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="CountryCovidStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountryCovidStats" />
       <module name="OOD_Project.main" />
@@ -138,13 +140,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.OOD_Project [run]" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Gradle.OOD_Project [run]" />
         <item itemvalue="Application.WorldStats" />
         <item itemvalue="Application.FxMain" />
         <item itemvalue="Application.CountryCovidStats" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -168,6 +182,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1586817644475" />
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587773464206">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587773464206" />
     <state x="709" y="268" key="#com.intellij.ide.util.MemberChooser" timestamp="1587514823587">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -180,10 +198,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="484" y="222" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1587337844583" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586824108454">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="542" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587779278950">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586824108454" />
+    <state x="542" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587779278950" />
     <state x="434" y="119" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1585543976952">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -192,26 +211,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="410" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585549118816" />
-    <state width="1323" height="75" key="GridCell.Tab.0.bottom" timestamp="1587712116509">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1587779438684">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="75" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587712116509" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
-    <state width="1323" height="75" key="GridCell.Tab.0.center" timestamp="1587712116508">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438684" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1587779438683">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="75" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587712116508" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
-    <state width="1323" height="75" key="GridCell.Tab.0.left" timestamp="1587712116508">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438683" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1587779438682">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="75" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587712116508" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
-    <state width="1323" height="75" key="GridCell.Tab.0.right" timestamp="1587712116509">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438682" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1587779438683">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="75" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587712116509" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587517672316" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438683" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585547644012">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -228,10 +247,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="408" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1586825246095" />
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587335269276">
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587778481164">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1587335269276" />
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1587778481164" />
     <state x="65" y="0" key="new project wizard" timestamp="1585544874828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
