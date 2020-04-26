@@ -7,9 +7,11 @@ import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Screen;
@@ -41,7 +43,6 @@ public class Main extends Application {
             myCountries.add(new CountryCovidStats("ESP", date));
             myCountries.add(new CountryCovidStats("CHN", date));
             myCountries.add(new CountryCovidStats("USA", date));
-
 
 
             window = primaryStage;
@@ -85,6 +86,8 @@ public class Main extends Application {
         Map<String, String> countries = Tools.createMap();
         ComboBox comboBox = new ComboBox(FXCollections.observableArrayList(countries.keySet()));
         comboBox.setValue("United States of America (the)");
+        Label AddCountry = new Label("Add Counrtry:    ");
+
 
         EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
@@ -111,12 +114,13 @@ public class Main extends Application {
         };
 
         comboBox.setOnAction(event);
-        hBox.getChildren().addAll(comboBox);
-        hBox.setStyle("-fx-border-style: solid inside;" +
-                "-fx-border-width: 2;" +
-                "-fx-border-insets: 5;" +
-                "-fx-border-radius: 5;" +
-                "-fx-border-color: blue;");
+        hBox.getChildren().addAll(AddCountry, comboBox);
+        hBox.setPadding(new Insets(5));
+//        hBox.setStyle("-fx-border-style: solid inside;" +
+//                "-fx-border-width: 2;" +
+//                "-fx-border-insets: 5;" +
+//                "-fx-border-radius: 5;" +
+//                "-fx-border-color: blue;");
 //        hBox.setPrefWidth(120);
         return hBox;
     }
