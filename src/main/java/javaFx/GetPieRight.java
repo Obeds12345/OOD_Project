@@ -32,10 +32,14 @@ public class GetPieRight {
         });
 
         pieChart.setLabelLineLength(0);
-        pieChart.setLegendSide(Side.LEFT);
+        pieChart.setLegendSide(Side.TOP);
         VBox vbox = new VBox(pieChart);
-        vbox.setPrefWidth(500);
-        vbox.setPrefHeight(500);
+        vbox.setPrefWidth(400);
+        vbox.setPrefHeight(400);
+        vbox.setStyle("-fx-border-style: solid inside;" +
+                "-fx-border-width: 1;" +
+                "-fx-border-radius: 5;" +
+                "-fx-border-color: gray;");
         return vbox;
     }
 

@@ -21,4 +21,4 @@ javafx {
     modules = [ 'javafx.controls' ]
 }
 
-mainClassName = 'javaFx.Test'
+mainClassName = 'javaFx.Main'
