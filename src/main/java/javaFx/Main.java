@@ -34,7 +34,7 @@ public class Main extends Application {
         try {
             DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             Calendar cal = Calendar.getInstance();
-            cal.add(Calendar.DATE, -1); // gets yesterdays date
+            cal.add(Calendar.DATE, -1);
             String date = dateFormat.format(cal.getTime());
             List<CountryCovidStats> myCountries = new ArrayList<>();
 
@@ -116,12 +116,7 @@ public class Main extends Application {
         comboBox.setOnAction(event);
         hBox.getChildren().addAll(AddCountry, comboBox);
         hBox.setPadding(new Insets(5));
-//        hBox.setStyle("-fx-border-style: solid inside;" +
-//                "-fx-border-width: 2;" +
-//                "-fx-border-insets: 5;" +
-//                "-fx-border-radius: 5;" +
-//                "-fx-border-color: blue;");
-//        hBox.setPrefWidth(120);
+
         return hBox;
     }
 

@@ -4,12 +4,13 @@
     <list default="true" id="6e19bc3b-5982-4f8a-827d-4f42ed44d71c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/CountryName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/CountryName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/CountryStatsAllDates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/CovidStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieLeft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/GetPieRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/GetPieRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/worldStats.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/worldStats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NotInUsed/GetBarChart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NotInUsed/GetLineChart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NotInUsed/GetPieChart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NotInUsed/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/HttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/HttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javaFx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFx/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,17 +38,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="OOD_Project" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OOD_Project" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OOD_Project" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -87,7 +77,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunManager" selected="Gradle.OOD_Project [run]">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CountryCovidStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountryCovidStats" />
       <module name="OOD_Project.main" />
@@ -144,12 +134,23 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.OOD_Project [run]" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.WorldStats" />
         <item itemvalue="Application.FxMain" />
         <item itemvalue="Application.CountryCovidStats" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -202,26 +203,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="410" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585549118816" />
-    <state width="1323" height="17" key="GridCell.Tab.0.bottom" timestamp="1587922247064">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1588093007932">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="17" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587922247064" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438684" />
-    <state width="1323" height="17" key="GridCell.Tab.0.center" timestamp="1587922247064">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588093007932" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1588093007931">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="17" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587922247064" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438683" />
-    <state width="1323" height="17" key="GridCell.Tab.0.left" timestamp="1587922247063">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588093007931" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1588093007930">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="17" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587922247063" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438682" />
-    <state width="1323" height="17" key="GridCell.Tab.0.right" timestamp="1587922247064">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588093007930" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1588093007931">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1323" height="17" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587922247064" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587779438683" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588093007931" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585547644012">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

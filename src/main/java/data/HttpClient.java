@@ -21,8 +21,6 @@ public class HttpClient {
 
         Path output = Paths.get("output");
 
-        //System.out.println(url);
-
         String json = NewHttpGet(url);
 
         if(!Files.exists(output.toAbsolutePath())) {
